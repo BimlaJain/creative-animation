@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thank You Beautiful Animation</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            @keyframes fadeInBounce {
+                0% {
+                    opacity: 0;
+                    transform: translateY(50px);
+                }
+
+                50% {
+                    opacity: 1;
+                    transform: translateY(-20px);
+                }
+
+                100% {
+                    transform: translateY(0);
+                }
+            }
+
+            .animate-thankyou {
+                animation: fadeInBounce 2s ease-out;
+            }
+        </style>
+    </head>
+
+    <body id="thanku"
+        class="flex items-center justify-center min-h-screen bg-gradient-to-r from-purple-500 via-pink-500 to-red-500">
+
+        <!-- Thank You Beautiful Text -->
+        <h1 class="text-6xl font-bold text-white animate-thankyou">Thank You</h1>
+
+    </body>
+
+</html>

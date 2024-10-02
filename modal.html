@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Primary Meta Tags -->
+        <title>creativity-task</title>
+        <meta name="title" content="creativity-task" />
+        <meta name="description" content="make a creativity task with aanimation" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://luminous-cupcake-14d4c4.netlify.app/" />
+        <meta property="og:title" content="creativity-task" />
+        <meta property="og:description" content="make a creativity task with aanimation" />
+        <meta property="og:image" content="/metatag.png" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://luminous-cupcake-14d4c4.netlify.app/" />
+        <meta property="twitter:title" content="creativity-task" />
+        <meta property="twitter:description" content="make a creativity task with aanimation" />
+        <meta property="twitter:image" content="/metatag.png" />
+        <!-- Meta Tags Generated with https://metatags.io -->
+        <style>
+            @keyframes modal-pop {
+                0% {
+                    opacity: 0;
+                    transform: scale(0.8);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            .modal-animate {
+                animation: modal-pop 0.5s ease-out;
+            }
+        </style>
+    </head>
+
+    
+<body id="text" class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <button class="px-4 py-2 bg-blue-500 text-white rounded-lg" onclick="toggleModal()">Open</button>
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="bg-white p-8 rounded-lg shadow-lg max-w-lg w-full modal-animate">
+            <h2 class="text-2xl font-bold mb-4">HEllo Everyone!!</h2>
+            <p class="mb-6">This is a task of modal animation which is included in creativity task</p>
+            <a href="thanku.html" class="px-4 py-2 bg-red-500 text-white rounded-lg" onclick="toggleModal()">Close</a>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

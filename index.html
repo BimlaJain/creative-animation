@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Primary Meta Tags -->
+        <title>creativity-task</title>
+        <meta name="title" content="creativity-task" />
+        <meta name="description" content="make a creativity task with aanimation" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://luminous-cupcake-14d4c4.netlify.app/" />
+        <meta property="og:title" content="creativity-task" />
+        <meta property="og:description" content="make a creativity task with aanimation" />
+        <meta property="og:image" content="/metatag.png" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://luminous-cupcake-14d4c4.netlify.app/" />
+        <meta property="twitter:title" content="creativity-task" />
+        <meta property="twitter:description" content="make a creativity task with aanimation" />
+        <meta property="twitter:image" content="/metatag.png" />
+        <!-- Meta Tags Generated with https://metatags.io -->
+        <style>
+            @keyframes scale-bounce {
+
+                0%,
+                100% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.5);
+                }
+            }
+
+            .animate-scale {
+                animation: scale-bounce 1s infinite;
+            }
+
+            .hover-slide::before {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 100%;
+                top: 0;
+                left: 0;
+                border-left: 4px solid #3b82f6;
+                transition: width 0.3s ease-in-out;
+            }
+
+            .hover-slide:hover::before {
+                width: 100%;
+            }
+        </style>
+    </head>
+
+    <body class="flex items-center justify-center min-h-screen bg-gray-100">
+       
+        <a href="circle.html"
+            class="px-12 py-8 bg-blue-500 text-white text-4xl font-bold rounded-lg transform transition duration-500 hover:bg-blue-700 hover:scale-110">
+            click here
+    </a>
+    </body>
+    
+</html>
